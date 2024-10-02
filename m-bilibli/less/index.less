@@ -1,0 +1,90 @@
+@import 'base.less';
+// 基准值变量
+@baseSize: 3.75vw;
+
+
+.suspension{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // background-color: pink ;
+    .m-navbar{
+        padding: 0 (12 / @baseSize) 0 (18 / @baseSize);
+        height: (44 / @baseSize);
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            i{
+                font-size: (28 / @baseSize);
+                color: #fb7299;
+
+            }
+        }
+        .right{
+            display: flex;
+            .search{
+                color: #ccc;
+                i{
+                    font-size: (22 / @baseSize);
+                }
+            }
+            .face{
+                overflow: hidden;
+                width:(24 / @baseSize);
+                height: (24 / @baseSize);
+                ground-color: white;
+                border-radius: 50%;
+                margin: 0(20 / @baseSize);
+            }
+            .app-btn{
+                width:(72 / @baseSize);
+                height: (24 / @baseSize);
+                // background-color: pink;
+            }
+        }
+    }
+    .channel-menu{
+        position: relative;
+        height: (40 / @baseSize);
+        // background-color: purple;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e7e7e7;
+        .tabs{
+            overflow: hidden;
+            flex: 1;
+            .tabs-list{
+                display:flex;
+                a{
+                    padding: 0 (16 / @baseSize);
+                    white-space: nowrap;
+                    font-size: (14 / @baseSize);
+                }
+                .line{
+                    position: absolute;
+                    left: (16 / @baseSize);
+                    bottom: 0;
+                    width: (28 / @baseSize);
+                    height: (2 / @baseSize);
+                    background-color: #fb7299;
+                    
+                }
+            }
+        }
+        .after{
+            float: right;
+            width: (40 / @baseSize);
+            height: (40 / @baseSize);
+            text-align: center;
+            ground-color: #fff;
+            line-height: (40 / @baseSize);
+            color: #ccc;
+            i{
+                font-size: (20 / @baseSize);
+            }
+        }
+    }
+} 
